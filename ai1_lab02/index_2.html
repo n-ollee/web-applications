@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ToDo list</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tasks To Do</h1>
+
+    <section class="controls">
+      <input id="searchInput" type="text" placeholder="Search... (at least 2 signs)" />
+    </section>
+
+    <section class="todo-list-section">
+      <ul id="tasksList" class="tasks-list" aria-live="polite"></ul>
+    </section>
+
+    <section class="adder">
+      <input id="taskText" type="text" placeholder="New task (3-255 signs)" maxlength="255" />
+      <input id="taskDate" type="datetime-local" />
+      <button id="addBtn">Add</button>
+    </section>
+
+    <footer class="help">
+      <small>Click task to edit. Click outside or press ENTER to save. Tasks are stored in LocalStorage.</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+ 
